@@ -16,6 +16,20 @@
     @include font(45px, 400, 45px);
   }
 }
+.link__create {
+  display: flex;
+  justify-content: center;
+  color: var(--color-hover);
+  @include font(25px, 400, 25px);
+  padding-top: 20px;
+  transition: all 0.5s;
+  &:hover,
+  &:focus {
+    color: var(--color-header);
+    outline: none;
+    scale: 1.2;
+  }
+}
 .box__btn {
   display: flex;
   justify-content: center;
