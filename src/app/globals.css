@@ -6,10 +6,10 @@
     "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --background-body: #f3f5fa;
-
+  --background-btn: #5390f5;
   --color-header: #5390f5;
   --color-hover: #fa832f;
-  --color-text: #01193e;
+  --color-text: #033176;
 
   --border: 1px solid #fa832f;
 }

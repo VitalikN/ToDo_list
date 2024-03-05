@@ -20,9 +20,9 @@ const Header = () => {
           <FaHome />
         </Link>
         <Link
-          href="/add_item"
+          href="/add_todo"
           className={`${s.navigation__link} ${
-            pathname === "/add_item" ? s.active : ""
+            pathname === "/add_todo" ? s.active : ""
           }`}
         >
           <RiPlayListAddLine />
