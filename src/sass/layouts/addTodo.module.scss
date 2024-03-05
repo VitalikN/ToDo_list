@@ -2,7 +2,7 @@
 @import "../utils/mixins";
 
 .section__add__todo {
-  padding: 50px 0 50px;
+  padding: 50px 0;
 }
 .container__todo {
   display: flex;
@@ -35,7 +35,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  z-index: 0;
+
   width: 100%;
 }
 
@@ -48,13 +48,12 @@
   align-self: stretch;
   border-radius: 10px;
 
-  min-height: 29px;
   border: none;
   outline: none;
   color: var(--color-header);
   background: var(--background-body);
-  font-size: 15px;
-  font-weight: 400;
+  @include font(16px, 400, 16px);
+
   transition: all 0.5s;
 
   -webkit-appearance: none;
@@ -66,7 +65,7 @@
     scale: 1.05;
     box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
       0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
-    // background: #696969;
+
     color: var(--color-hover);
 
     outline: none;
@@ -74,8 +73,8 @@
 }
 
 .error__add {
-  font-size: 8.5px;
-  font-weight: 300;
+  @include font(10px, 400, 10px);
+
   color: red;
   position: absolute;
   left: 0;
@@ -96,9 +95,7 @@
   justify-content: center;
   align-self: stretch;
   color: #fff;
-
-  font-size: 15px;
-  font-weight: 400;
+  @include font(15px, 400, 15px);
 
   border: none;
   outline: none;
