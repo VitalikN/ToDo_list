@@ -1,0 +1,24 @@
+@import "../utils/container.scss";
+@import "../utils/mixins";
+
+.footer__section {
+  display: flex;
+  align-items: center;
+  border-top: var(--border);
+}
+.footer__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer__text {
+  padding: 15px 0 15px 0;
+  @include font(20px, 500, 20px);
+}
+.footer__link {
+  color: var(--color-text);
+  padding: 10px;
+  @include tablet {
+    padding: 15px;
+  }
+}

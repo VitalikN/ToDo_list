@@ -1,0 +1,26 @@
+@import "../utils/container.scss";
+@import "../utils/mixins";
+
+.header {
+  background: var(--background-body);
+  border-bottom: var(--border);
+}
+
+.container__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation__link {
+  cursor: pointer;
+  @include font(22px, 500, 22px);
+  padding: 15px;
+
+  color: var(--color-header);
+  transition: color 0.5s;
+  &:hover,
+  &.active {
+    color: var(--color-hover);
+  }
+}
