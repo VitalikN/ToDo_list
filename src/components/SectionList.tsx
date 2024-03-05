@@ -22,7 +22,7 @@ const SectionList = () => {
   return (
     <section className={s.section__list}>
       <div className={s.container}>
-        <h1 className={s.title}>List toDo</h1>
+        <h1 className={s.title}>List todo</h1>
         {all > 0 ? (
           <>
             <div className={s.box__btn}>
